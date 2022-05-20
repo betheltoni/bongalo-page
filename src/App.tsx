@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route path='/signup2' element={<Signup2/>} />
           <Route path='/signup' element={<Signup/>} />
-          <Route path='/' element={<LandingPage/>} />
+          <Route path='/bongalo-page/' element={<LandingPage/>} />
         </Routes>
       </BrowserRouter>
     </div>
