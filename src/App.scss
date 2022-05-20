@@ -1,0 +1,996 @@
+.app{
+  margin: 0;
+  font-family: 'GT Walsheim', sans-serif;
+}
+.navbar{
+  font-family: 'GT Walsheim', sans-serif;                                                
+  color: white;
+  .shortcut{
+    display: none;
+  }
+  .navbar-logo{
+    width: 10%;
+    margin-left: 3%;
+    margin-top: 2%;
+  }
+  .navlinks-wrapper{
+    position: absolute;
+    left: 45%;
+    top: 6%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .blue-ellipse{
+      width: 8px;
+      position: relative;
+      top: 20px;
+      right: 25px;
+    }
+  }
+  .navbar-btn{
+    display: inline;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+}
+
+.header{
+  font-family: 'GT Walsheim', sans-serif;  
+  background-image: url("./components/images/background-header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  .overlay{
+    background:linear-gradient( rgba(30, 40, 52, 0.7) 36.33%, rgba(18, 23, 30, 0.458172) 95.98%, rgba(255, 255, 255, 0.007) 96.01%);
+    height: 104%;
+    .header-content{
+      padding-top: 10%;
+      width: 40%;
+      margin: auto;
+      color: white;
+      text-align: center;
+      span{
+        color: #3E94FE;
+      }
+      h1{
+        display: inline;
+        font-size: 3rem;
+      }
+      div{
+        display: inline;
+      }
+      .leftarrow{
+        position: absolute;
+        left: 3%;
+        .left-arrow{
+          position: relative;
+          right: 40px;
+          bottom: 25px;
+        }
+      }
+      .rightarrow{
+        position: absolute;
+        right: 5%;
+        .right-arrow{
+          position: relative;
+          right: 40px;
+          bottom: 25px;
+        }
+      }
+    }
+    .downarrow{
+      position: relative;
+      top: 10%;
+      left: 50%;
+      width: 30%;
+      .down-arrow{
+        position: relative;
+        right: 90px;
+        bottom: 30px;
+      }
+      .blue-ellipse{
+        width: 45px;
+        position: relative;
+        right: 57px;
+        bottom: 13px;
+      }
+    }
+    .details{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: #fff;
+      width: 90%;
+      margin: auto;
+      padding: 20px 0;
+      box-shadow: 0px 50px 100px rgba(62, 148, 254, 0.15);
+      border-radius: 5px;
+      position: relative;
+      top: 100px;
+      .calender-icon{
+        position: relative;
+        right: 30px;
+        bottom: 11px;
+      }
+      .line{
+        margin-right: 10px;
+      }
+      p{
+        margin: 0;
+        color: rgba(18, 23, 30, 0.654531);
+      }
+    }
+  }     
+}
+
+.hero{
+  font-family: 'GT Walsheim', sans-serif;  
+  padding-top: 130px;
+  margin: 0 5%;
+  .overlay{
+    background: radial-gradient(50% 50% at 50% 50%, rgba(18, 23, 30, 0.654531) 0%, rgba(62, 148, 254, 0.22) 100%);
+    height: 100%;
+    position: relative;
+    bottom: 20px;
+  }
+  .featured-cities-wrapper{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 20px;
+    .kigali{
+      height: 250px;
+      width: 98%;
+      background-image: url("./components/images/kigali.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #fff;
+      .text{
+        position: relative;
+        top: 40%;
+        left: 35%;
+        width: 30%;
+        text-align: center;
+      }
+    }
+    .yaounde{
+      margin-left: 2%;
+      height: 250px;
+      width: 98%;
+      background-image: url("./components/images/yaounde.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #fff;
+      .text{
+        position: relative;
+        top: 40%;
+        left: 35%;
+        width: 30%;
+        text-align: center;
+      }
+    }
+    
+  }
+  .featured-cities-wrapper-2{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    .rubavu{
+      width: 97%;
+      height: 250px;
+      background-image: url("./components/images/rubavu.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #fff;
+      .text{
+        position: relative;
+        top: 40%;
+        left: 35%;
+        width: 30%;
+        text-align: center;
+      }
+    }
+    .doula{
+      margin-left: 1.5%;
+      width: 97%;
+      height: 250px;
+      background-image: url("./components/images/doula.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #fff;
+      .text{
+        position: relative;
+        top: 40%;
+        left: 35%;
+        width: 30%;
+        text-align: center;
+      }
+    }
+    .butare{
+      margin-left: 3%;
+      width: 97%;
+      height: 250px;
+      background-image: url("./components/images/butare.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #fff;
+      .text{
+        position: relative;
+        top: 40%;
+        left: 35%;
+        width: 30%;
+        text-align: center;
+      }
+    }
+  }
+
+  .featured-places{
+    padding-top: 20px;
+    .featured-places-wrapper{
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+    }
+    .arrow{
+      width: 15%;
+      position: relative;
+      left: 280px;
+      bottom: 55%;
+      
+    }
+  }
+
+  .experiences{
+    p{
+      margin: 0;
+    }
+    .nirvana-footer{
+      position: relative;
+      bottom: 9%;
+    }
+    .experiences-wrapper{
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+    }
+    .arrow{
+      width: 15%;
+      position: relative;
+      left: 168px;
+      bottom: 55%;
+      
+    }
+  }
+
+  .about{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #3E94FE;
+    color: #fff;
+    padding: 3% 0 2% 0;
+    box-shadow: 0px 30px 60px rgba(62, 148, 254, 0.2);
+    border-radius: 5px;
+    p{
+      font-size: small;
+    }
+    .availabilty{
+      width: 55%;
+      margin-left: 15%;
+    }
+    .satisfaction{
+      width: 55%;
+      margin-left: 23%;
+    }
+    .support{
+      margin-left: 27%;
+      width: 55%;
+    }
+  }
+
+  .sponsors{
+    padding-top: 20px;
+    .sponsors-wrapper{
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      margin: 0 5%;
+    }
+    
+    h1{
+      text-align: center;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+.footer{
+  font-family: 'GT Walsheim', sans-serif;  
+  padding: 20px 5%;
+  background: rgba(62, 148, 254, 0.3);
+  color: rgba(18, 23, 30, 0.654531);
+  .footer-header{
+    display: grid;
+    grid-template-columns: auto auto;
+    
+    .logo-wrapper{
+      .logo{
+        width: 28%;
+      }
+    }
+    .form{
+      position: absolute;
+      left: 30%;
+      p{
+        color: rgba(18, 23, 30, 0.654531);
+      }
+      input{
+        background: #FFFFFF;
+        border-radius: 9px;
+        border: 1px solid #ffffff;
+        padding-left: 40px;
+        height: 40px;
+        width: 400px;
+        margin-right: 5px;
+      }
+      .envelope{
+        position: relative;
+        right: 435px;
+        top: 5px;
+      }
+      .btn{
+        padding: 11px 15px;
+        border: 1px solid #3E94FE;
+      }
+    }
+  }
+  .footer-wrapper{
+    padding-top: 120px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    p{
+      font-size: 0.8rem;
+      margin: 0;
+    }
+    .contacts{
+      width: 40%;
+      .address{
+        margin-bottom: 20px;
+      }
+    }
+    .join-us{
+      position: relative;
+      right: 40%;
+    }
+  }
+  .payment{
+    position: relative;
+    left: 40%;
+    height: 80px;
+  }
+  .copyright{
+    position: relative;
+    bottom: 20px;
+  }
+}
+
+.signup{
+  font-family: 'GT Walsheim', sans-serif;  
+  margin: 50px auto;
+  width: 450px;
+  .signup-header{
+    height: 420px;
+    background-image: url("./components/images/backgroundsignup.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px 50px 0 0;
+    .signuplogo{
+      margin-left: 5%;
+      margin-top: 15%;
+    }
+  }
+  .signup-container{
+    margin-left: 5%;
+    padding-top: 50px;
+    height: 540px;
+    border-radius: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px -6px 20px rgba(62, 148, 254, 0.22);
+    .google{
+      width: 87%;
+      height: 55px;
+      margin: auto;
+      border-radius: 7px;
+      border: 1px solid #3E94FE;
+      span{
+        position: relative;
+        bottom: 11px;
+        left: 70px;
+      }
+      img{
+        padding-top: 10px;
+        padding-left: 10px;
+      }
+      .horizontal{
+        padding-top: 30px;
+      }
+    }
+    .signup-text{
+      margin-left: 6%;
+      margin-top: 80px;
+      margin-bottom: 50px;
+    }
+    .detail-wrapper{
+      margin: 0 6%;
+      display: grid;
+      grid-template-columns: auto auto;
+      div{
+        input{
+          width: 93%;
+          height: 50px;
+          border: 1px solid #3E94FE;
+          border-radius: 7px;
+        }
+        span{
+          background-color: #FFFFFF;
+          color: #3E94FE;
+          position: relative;
+          bottom: 68px;
+          left: 10px;
+          padding: 0 5px;
+        }
+      }
+    }
+    .detail-wrapper2{
+      margin: 0 6%;
+      display: grid;
+      grid-template-columns: 30% 70%;
+      div{
+        input{
+          height: 50px;
+          border: 1px solid #3E94FE;
+          border-radius: 7px;
+        }
+        .region{
+          width: 90px;
+        }
+        .region-text{
+          color: black;
+          bottom: 40px;
+          left: 20px;
+        }
+        .rwanda{
+          position: relative;
+          bottom: 40px;
+          right: 38px;
+        }
+        .downarrow{
+          position: relative;
+          bottom: 40px;
+          left: 15px;
+        }
+        .phone{
+          width: 94%;
+        }
+        span{
+          background-color: #FFFFFF;
+          color: #3E94FE;
+          position: relative;
+          bottom: 68px;
+          left: 10px;
+          padding: 0 5px;
+        }
+      }
+    }
+    .btn{
+      margin: 0 6%;
+      width: 86%;
+      height: 55px;
+    }
+    .rightarrow{
+      background-color: #3E94FE;
+      position: relative;
+      bottom: 36px;
+      left: 60%;
+    }
+  }
+}
+
+.signup2{
+  font-family: 'GT Walsheim', sans-serif;  
+  margin: 50px auto;
+  width: 450px;
+  .signup-header{
+    height: 280px;
+    background-image: url("./components/images/backgroundsignup.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px 50px 0 0;
+    .signuplogo{
+      margin-left: 5%;
+      margin-top: 15%;
+    }
+  }
+  .signup-container{
+    margin-left: 5%;
+    padding-top: 50px;
+    height: 680px;
+    border-radius: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px -6px 20px rgba(62, 148, 254, 0.22);
+    .google{
+      width: 87%;
+      height: 55px;
+      margin: auto;
+      border-radius: 7px;
+      border: 1px solid #3E94FE;
+      span{
+        position: relative;
+        bottom: 11px;
+        left: 70px;
+      }
+      img{
+        padding-top: 10px;
+        padding-left: 10px;
+      }
+      .horizontal{
+        padding-top: 30px;
+      }
+    }
+    .signup-text{
+      margin-left: 6%;
+      margin-top: 80px;
+      margin-bottom: 50px;
+    }
+    div{
+      margin: 0 6%;
+      input{
+        margin: 10px 0;
+        width: 95%;
+        height: 55px;
+        border: 1px solid #3E94FE;
+        border-radius: 7px;
+      }
+      span{
+        background-color: #FFFFFF;
+        color: #3E94FE;
+        position: relative;
+        bottom: 79px;
+        left: 15px;
+        padding: 0 5px;
+      }
+      .eye{
+        position: relative;
+        bottom: 50px;
+        left: 65%;
+      }
+      .eye2{
+        position: relative;
+        bottom: 50px;
+        left: 49%;
+      }
+    }
+    .btn{
+      margin: 0 6%;
+      width: 86%;
+      height: 55px;
+    }
+    .rightarrow{
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .App{
+    margin: 0;
+    width: 100%;
+    font-family: 'GT Walsheim', sans-serif;
+                                                
+  }
+
+  .navbar{
+    .shortcut{
+      display: inline;
+      margin-left: 5%;
+      margin-right: 3%;
+    }
+    .navbar-logo{
+      width: 25%;
+      margin-top: 10%;
+    }
+    .navlinks-wrapper{
+      display: none;
+      .blue-ellipse{
+        display: none;
+      }
+    }
+    .navbar-btn{
+      display: inline;
+      position: relative;
+      top: 5.5%;
+      left: 30%;
+    }
+  }
+  
+  .header{
+    .overlay{
+      .header-content{
+        width: 80%;
+        h1{
+          font-size: 2.5rem;
+        }
+        div{
+          display: inline;
+        }
+        .leftarrow{
+          display: none;
+          .left-arrow{
+            display: none;
+          }
+        }
+        .rightarrow{
+          display: none;
+          .right-arrow{
+            display: none;
+          }
+        }
+      }
+      .downarrow{
+        position: static;
+        width: 50%;
+        margin-left: 40%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        .down-arrow{
+          position: relative;
+        }
+        .blue-ellipse{
+          position: relative;
+        }
+      }
+      .details{
+        display: grid;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #fff;
+        width: 80%;
+        margin: 100px auto;
+        padding: 20px 20px;
+        box-shadow: 0px 50px 100px rgba(62, 148, 254, 0.15);
+        border-radius: 5px;
+        position: static;
+        .downwardarrow{
+          position: relative;
+          bottom: 20px;
+          right: 30px;
+        }
+        .calender-icon{
+          position: relative;
+          right: 30px;
+          bottom: 11px;
+        }
+        .line{
+          margin-right: 10px;
+        }
+        p{
+          margin: 0;
+          color: rgba(18, 23, 30, 0.654531);
+        }
+      }
+    }     
+  }
+  
+  .hero{
+    padding-top: 425px;
+    margin: 0 5%;
+    .overlay{
+      background: radial-gradient(50% 50% at 50% 50%, rgba(18, 23, 30, 0.654531) 0%, rgba(62, 148, 254, 0.22) 100%);
+      height: 100%;
+      position: relative;
+      bottom: 20px;
+    }
+    .featured-cities{
+      h1{
+        font-size: 1.5rem;
+      }
+    }
+    .featured-cities-wrapper{
+      display: grid;
+      grid-template-columns: auto auto;
+      margin-bottom: 20px;
+      .overlay{
+        position: relative;
+        top: -13px;
+      }
+      .kigali{
+        height: 110px;
+        width: 100%;
+        margin-right: 4%;
+        .text{
+          position: static;
+          width: 96%;
+          h1{
+            font-size: 20px;
+            padding-top: 15px;
+            margin-bottom: 0;
+          }
+          p{
+            margin: 0;
+          }
+        }
+      }
+      .yaounde{
+        margin-left: 4%;
+        height: 110px;
+        width: 96%;
+        
+        .text{
+          position: static;
+          width: 100%;
+          h1{
+            font-size: 20px;
+            padding-top: 15px;
+            margin-bottom: 0;
+          }
+          p{
+            margin: 0;
+          }
+        }
+      }
+      
+    }
+    .featured-cities-wrapper-2{
+      display: grid;
+      grid-template-columns: auto auto auto;
+      .overlay{
+        position: relative;
+        top: -9.5px;
+      }
+      .rubavu{
+        width: 97%;
+        height: 110px;
+        .text{
+          position: static;
+          width: 100%;
+          text-align: center;
+          h1{
+            font-size: 15px;
+            padding-top: 25px;
+            margin-bottom: 0;
+          }
+          p{
+            margin: 0;
+          }
+        }
+      }
+      .doula{
+        margin-left: 1.5%;
+        width: 97%;
+        height: 110px;
+        .text{
+          position: static;
+          width: 100%;
+          text-align: center;
+          h1{
+            font-size: 15px;
+            padding-top: 25px;
+            margin-bottom: 0;
+          }
+          p{
+            margin: 0;
+          }
+        }
+      }
+      .butare{
+        margin-left: 3%;
+        width: 97%;
+        height: 110px;
+        .text{
+          position: static;
+          width: 100%;
+          text-align: center;
+          h1{
+            font-size: 15px;
+            padding-top: 25px;
+            margin-bottom: 0;
+          }
+          p{
+            margin: 0;
+          }
+        }
+      }
+    }
+  
+    .featured-places{
+      h1{
+        font-size: 1.5em;
+      }
+      .featured-places-wrapper{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        overflow-x: scroll;
+        .room{
+          margin-right: 10px;
+        }
+        .apartment{
+          margin-right: 10px;
+        }
+        .house{
+          margin-right: 10px;
+        }
+        .room2{
+          margin-right: 10px;
+        }
+      }
+      .arrow{
+        display: none;
+        
+      }
+    }
+  
+    .experiences{
+      h1{
+        font-size: 1.5em;
+      }
+      p{
+        margin: 0;
+      }
+      .nirvana-footer{
+        position: relative;
+        bottom: 0;
+      }
+      .experiences-wrapper{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        overflow-x: scroll;
+        .memorial{
+          margin-right: 10px;
+        }
+        .mountain{
+          margin-right: 10px;
+        }
+        .anastasia{
+          margin-right: 10px;
+        }
+        .nirvana{
+          margin-right: 10px;
+        }
+      }
+      .arrow{
+       display: none; 
+      }
+    }
+  
+    .about{
+      display: grid;
+      grid-template-columns: auto;
+      background-color: #3E94FE;
+      color: #fff;
+      padding: 12% 0 12% 0;
+      margin-top: 50px;
+      box-shadow: 0px 30px 60px rgba(62, 148, 254, 0.2);
+      border-radius: 5px;
+      p{
+        font-size: small;
+      }
+      .availabilty{
+        width: 65%;
+        margin: auto;
+        text-align: center;
+      }
+      .satisfaction{
+        padding-top: 60px;
+        width: 65%;
+        margin: auto;
+        text-align: center;
+      }
+      .support{
+        padding-top: 60px;
+        width: 65%;
+        margin: auto;
+        text-align: center;
+        
+      }
+    }
+  
+    .sponsors{
+      padding-top: 20px;
+      margin: 15% auto;
+      .sponsors-wrapper{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        overflow-x: scroll;
+        margin: 0 5%;
+        div{
+          img{
+            padding-right: 50px;
+          }
+        }
+      }
+      
+      h1{
+        text-align: center;
+        padding-bottom: 50px;
+      }
+    }
+  }
+  
+  .footer{
+    padding: 30px 5% 60px 5%;
+    background: rgba(62, 148, 254, 0.3);
+    color: rgba(18, 23, 30, 0.654531);
+    .footer-header{
+      display: grid;
+      grid-template-columns: auto;
+      
+      .logo-wrapper{
+        .logo{
+          width: 40%;
+        }
+      }
+      .form{
+        position: static;
+        p{
+          color: rgba(18, 23, 30, 0.654531);
+        }
+        input{
+          background: #FFFFFF;
+          border-radius: 9px;
+          padding-left: 30px;
+          height: 40px;
+          width: 49%;
+          margin-right: 5px;
+        }
+        .envelope{
+          position: relative;
+          right: 58%;
+          top: 5px;
+        }
+        .btn{
+          padding: 10px 15px;
+          border: 1px solid #3E94FE;
+        }
+      }
+    }
+    .footer-wrapper{
+      padding-top: 120px;
+      display: grid;
+      grid-template-columns: auto auto;
+      h3{
+        font-size: 1em;
+      }
+      p{
+        font-size: 0.8rem;
+        margin: 0;
+      }
+      .links{
+        width: 100%;
+        margin-left: 15px;
+      }
+      .about{
+        width: 100%;
+      }
+      .contacts{
+        width: 100%;
+        .address{
+          margin-bottom: 20px;
+        }
+      }
+      .join-us{
+        width: 100%;
+        position: static;
+        margin-left: 15px;
+        img{
+          width: 70%;
+        }
+      }
+    }
+    .payment{
+      position: static;
+      height: 80px;
+    }
+    .copyright{
+      position: relative;
+      top: 100px;
+      width: 80%;
+    }
+  }
+  
+}
