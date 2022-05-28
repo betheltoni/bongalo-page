@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter,  Route, Routes } from 'react-router-dom'
 import './App.scss';
 import LandingPage from './components/LandingPage';
 import Signup from './components/Signup';
@@ -9,13 +9,13 @@ function App() {
   return (
     <div className="App">
       
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path='/signup2' element={<Signup2/>} />
           <Route path='/signup' element={<Signup/>} />
-          <Route path='/bongalo-page/' element={<LandingPage/>} />
+          <Route path='/' element={<LandingPage/>} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }

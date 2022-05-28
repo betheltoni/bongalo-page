@@ -37,7 +37,7 @@ const Signup2 = () => {
             <span>Confirm Password</span>
             <img src={eye} alt="" className='eye2'/>
         </div>
-        <Link to="/bongalo-page/">
+        <Link to="/">
             <Button text="Sign Up" style={{backgroundColor:"#3E94FE",color:"#fff",borderRadius:"6px",border:"1px solid white", fontSize:"1.1rem"}} />
         </Link>
       
