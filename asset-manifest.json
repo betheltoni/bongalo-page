@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bongalo-page/static/css/main.4392eaf1.css",
-    "main.js": "/bongalo-page/static/js/main.304bfa2e.js",
+    "main.js": "/bongalo-page/static/js/main.2cc5549d.js",
     "static/js/787.28cb0dcd.chunk.js": "/bongalo-page/static/js/787.28cb0dcd.chunk.js",
     "static/media/background-header.png": "/bongalo-page/static/media/background-header.9cdbab225bc2f4463efa.png",
     "static/media/yaounde.svg": "/bongalo-page/static/media/yaounde.9a380a558f96f9fa6f85.svg",
@@ -52,11 +52,11 @@
     "static/media/arrival.svg": "/bongalo-page/static/media/arrival.64d016562ef70a123abbaf5da7e2ef1b.svg",
     "static/media/Ellipse-blue.svg": "/bongalo-page/static/media/Ellipse-blue.08f11957f43c2ebe6714bacb4e4d9e83.svg",
     "main.4392eaf1.css.map": "/bongalo-page/static/css/main.4392eaf1.css.map",
-    "main.304bfa2e.js.map": "/bongalo-page/static/js/main.304bfa2e.js.map",
+    "main.2cc5549d.js.map": "/bongalo-page/static/js/main.2cc5549d.js.map",
     "787.28cb0dcd.chunk.js.map": "/bongalo-page/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4392eaf1.css",
-    "static/js/main.304bfa2e.js"
+    "static/js/main.2cc5549d.js"
   ]
 }
