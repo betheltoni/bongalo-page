@@ -5,7 +5,7 @@ import Hero from './Hero'
 
 const LandingPage = () => {
   return (
-    <div>
+    <div className='landing-page'>
         <Header/>
         <Hero/>
         <Footer/>

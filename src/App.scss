@@ -1,7 +1,8 @@
-.app{
+.App{
   margin: 0;
   font-family: 'GT Walsheim', sans-serif;
 }
+
 .navbar{
   font-family: 'GT Walsheim', sans-serif;                                                
   color: white;
@@ -251,48 +252,63 @@
     }
   }
 
-  .featured-places{
+  // .featured-places{
+  //   padding-top: 50px;
+  //   padding-bottom: 20px;
+  //   h1{
+  //     font-size: 40px;
+  //   }
+  //   .featured-places-wrapper{
+  //     display: grid;
+  //     grid-template-columns: auto auto auto auto;
+  //   }
+  //   .arrow{
+  //     width: 15%;
+  //     position: relative;
+  //     left: 280px;
+  //     bottom: 55%;
+      
+  //   }
+  // }
+
+  .featured-places-carousel{
     padding-top: 50px;
     h1{
       font-size: 40px;
     }
-    .featured-places-wrapper{
-      display: grid;
-      grid-template-columns: auto auto auto auto;
-    }
-    .arrow{
-      width: 15%;
-      position: relative;
-      left: 280px;
-      bottom: 55%;
-      
-    }
   }
-
-  .experiences{
+  .experience-carousel{
     padding-bottom: 40px;
+    padding-top: 40px;
     h1{
       font-size: 40px;
     }
-    p{
-      margin: 0;
-    }
-    .nirvana-footer{
-      position: relative;
-      bottom: 9%;
-    }
-    .experiences-wrapper{
-      display: grid;
-      grid-template-columns: auto auto auto auto;
-    }
-    .arrow{
-      width: 15%;
-      position: relative;
-      left: 168px;
-      bottom: 55%;
-      
-    }
   }
+
+  // .experiences{
+  //   padding-bottom: 40px;
+  //   h1{
+  //     font-size: 40px;
+  //   }
+  //   p{
+  //     margin: 0;
+  //   }
+  //   .nirvana-footer{
+  //     position: relative;
+  //     bottom: 9%;
+  //   }
+  //   .experiences-wrapper{
+  //     display: grid;
+  //     grid-template-columns: auto auto auto auto;
+  //   }
+  //   .arrow{
+  //     width: 15%;
+  //     position: relative;
+  //     left: 168px;
+  //     bottom: 55%;
+      
+  //   }
+  // }
 
   .about{
     display: grid;
@@ -614,6 +630,37 @@
   }
 }
 
+
+.carousel{
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  overflow-y: hidden;
+  margin: auto;
+  .carousel1-btn{
+    position: absolute;
+    right: 5%;
+    width: 50px;
+  }
+  .carousel-wrapper{
+    display: flex;
+    // overflow-y: hidden;
+    justify-content: center;
+    
+    .carousel-text{
+      margin: 0;
+    }
+
+    .carousel-item{
+      padding: 18px;
+      .carousel-image{
+        display: block;
+      }
+    }
+    
+  }
+}
+
 @media screen and (max-width: 767px) {
   .App{
     margin: 0;
@@ -859,64 +906,17 @@
       }
     }
   
-    .featured-places{
+    .featured-places-carousel{
+      padding-top: 50px;
       h1{
-        font-size: 1.5em;
-      }
-      .featured-places-wrapper{
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        overflow-x: scroll;
-        .room{
-          margin-right: 10px;
-        }
-        .apartment{
-          margin-right: 10px;
-        }
-        .house{
-          margin-right: 10px;
-        }
-        .room2{
-          margin-right: 10px;
-        }
-      }
-      .arrow{
-        display: none;
-        
+        font-size: 1.5rem;
       }
     }
-  
-    .experiences{
-      padding: 30px 0;
+    .experience-carousel{
+      padding-bottom: 40px;
+      padding-top: 40px;
       h1{
-        font-size: 1.5em;
-      }
-      p{
-        margin: 0;
-      }
-      .nirvana-footer{
-        position: relative;
-        bottom: 0;
-      }
-      .experiences-wrapper{
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        overflow-x: scroll;
-        .memorial{
-          margin-right: 10px;
-        }
-        .mountain{
-          margin-right: 10px;
-        }
-        .anastasia{
-          margin-right: 10px;
-        }
-        .nirvana{
-          margin-right: 10px;
-        }
-      }
-      .arrow{
-       display: none; 
+        font-size: 1.5rem;
       }
     }
   
@@ -1054,6 +1054,42 @@
       width: 80%;
     }
   }
+
+  
+.carousel{
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  overflow-y: hidden;
+  margin: auto;
+  .carousel1-btn{
+    position: absolute;
+    right: 5%;
+    width: 50px;
+  }
+  .carousel-wrapper{
+    display: flex;
+    // overflow-y: hidden;
+    justify-content: center;
+    
+    .carousel-text{
+      margin: 0;
+      font-size: 11px;
+    }
+
+    .carousel-item{
+      padding: 18px;
+      .carousel-image{
+        display: block;
+        width: 150px;
+      }
+      .experience-footer{
+        width: 100px;
+      }
+    }
+    
+  }
+}
   
 }
 
@@ -1301,64 +1337,16 @@
       }
     }
   
-    .featured-places{
+    .featured-places-carousel{
+      padding-top: 50px;
       h1{
-        font-size: 1.5em;
-      }
-      .featured-places-wrapper{
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        overflow-x: scroll;
-        .room{
-          margin-right: 10px;
-        }
-        .apartment{
-          margin-right: 10px;
-        }
-        .house{
-          margin-right: 10px;
-        }
-        .room2{
-          margin-right: 10px;
-        }
-      }
-      .arrow{
-        display: none;
-        
+        font-size: 1.5rem;
       }
     }
-  
-    .experiences{
-      padding: 30px 0;
+    .experience-carousel{
+      padding-bottom: 40px;
       h1{
-        font-size: 1.5em;
-      }
-      p{
-        margin: 0;
-      }
-      .nirvana-footer{
-        position: relative;
-        bottom: 0;
-      }
-      .experiences-wrapper{
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        overflow-x: scroll;
-        .memorial{
-          margin-right: 10px;
-        }
-        .mountain{
-          margin-right: 10px;
-        }
-        .anastasia{
-          margin-right: 10px;
-        }
-        .nirvana{
-          margin-right: 10px;
-        }
-      }
-      .arrow{
-       display: none; 
+        font-size: 1.5rem;
       }
     }
   
@@ -1500,36 +1488,7 @@
 
 @media screen and (min-width: 1001px) and (max-width: 1300px){
   
-  .featured-places-wrapper{
-    overflow-x: scroll;
-    .room{
-      margin-right: 10px;
-    }
-    .apartment{
-      margin-right: 10px;
-    }
-    .house{
-      margin-right: 10px;
-    }
-    .room2{
-      margin-right: 10px;
-    }
-  }
-  .experiences-wrapper{
-    overflow-x: scroll;
-    .memorial{
-      margin-right: 10px;
-    }
-    .mountain{
-      margin-right: 10px;
-    }
-    .anastasia{
-      margin-right: 10px;
-    }
-    .nirvana{
-      margin-right: 10px;
-    }
-  }
+
 
   .sponsors-wrapper{
     overflow-x: scroll;
