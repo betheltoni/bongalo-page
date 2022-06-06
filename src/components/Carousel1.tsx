@@ -8,25 +8,54 @@ import aparrtment from "./images/aparrtment.svg"
 import house from "./images/house.svg"
 import room2 from "./images/room2.svg"
 import featuredplacesarrow from "./images/featuredplacesarrow.svg"
+import prev from "./images/prev.svg"
+
 
 
 
 
 const Carousel1 = () => {
 
-    const dataRef:any = useRef(null);
+    const dataRef: any = useRef();
+    console.log(dataRef.current)
 
     const scrollRight = () => {
-        if(dataRef.current){
-            dataRef.current.scrollIntoView({
+        if (dataRef.current) {
+            dataRef.current.scrollBy({
+                top: 0,
+                left: 200,
                 behavior: "smooth",
-                block: "nearest",
-                inline: "nearest"
-            })
+            });
         }
-    }
+    };
+
+    const scrollLeft = () => {
+        if (dataRef.current) {
+            dataRef.current.scrollBy({
+                top: 0,
+                left: -200,
+                behavior: "smooth",
+            });
+        }
+    };
 
     const data:any = [
+        {
+            image: room,
+            footer: roomfooter3
+        },
+        {
+            image: aparrtment,
+            footer: apartmentfooter3
+        },
+        {
+            image: house,
+            footer: housefooter3
+        },
+        {
+            image: room2,
+            footer: room2footer3
+        },
         {
             image: room,
             footer: roomfooter3
@@ -54,16 +83,31 @@ const Carousel1 = () => {
           <h1>Featured Places</h1>
 
            <div className='carousel'>
-        {data.length && <div className='carousel-wrapper' >
-            {data.map((item:any, index:number) => <div key={index} className="carousel-item" ref={dataRef} >
+                <img src={prev} alt="" className='prev-btn' onClick={scrollLeft}/>
+               <div className='carousel-wrapper' ref={dataRef}>
+                    {data.map((item:any,index:any) => {
+                        return(
+                            <div key={index} className="carousel-item">
+                                <img src={item.image} alt="" className='carousel-image' />
+                                <img src={item.footer} alt="" className='carousel-image' />
+                            </div>
+                        )
+                    })}
+               </div>
+        {/* {data.length && <div className='carousel-wrapper' ref={dataRef}>
+            {data.map((item:any, index:number) => {
+                return(
+                    <div key={index} className="carousel-item"  >
 
                 <img src={item.image} alt=""  className='carousel-image'/>
                 <img src={item.footer} alt="" className='carousel-image' />
 
-            </div>)}
+            </div>
+                )
+            })}
             
             </div>
-        }
+        } */}
         <img src={featuredplacesarrow} alt="" onClick={scrollRight} className="carousel1-btn"/>
     </div>
       </div>

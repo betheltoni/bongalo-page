@@ -1,6 +1,9 @@
 .App{
   margin: 0;
   font-family: 'GT Walsheim', sans-serif;
+  ::-webkit-scrollbar{
+    display: none;
+  }
 }
 
 .navbar{
@@ -642,9 +645,14 @@
     right: 5%;
     width: 50px;
   }
+  .prev-btn{
+    position: absolute;
+    left: 5%;
+    width: 50px;
+  }
   .carousel-wrapper{
     display: flex;
-    // overflow-y: hidden;
+    overflow-y: hidden;
     justify-content: center;
     
     .carousel-text{
@@ -1484,6 +1492,41 @@
       width: 80%;
     }
   }
+
+  .carousel{
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    overflow-y: hidden;
+    margin: auto;
+    .carousel1-btn{
+      position: absolute;
+      right: 5%;
+      width: 50px;
+    }
+    .prev-btn{
+      position: absolute;
+      left: 5%;
+      width: 50px;
+    }
+    .carousel-wrapper{
+      display: flex;
+      overflow-y: hidden;
+      justify-content: center;
+      
+      .carousel-text{
+        margin: 0;
+      }
+  
+      .carousel-item{
+        padding: 30px;
+        .carousel-image{
+          display: block;
+        }
+      }
+      
+    }
+  }
 }
 
 @media screen and (min-width: 1001px) and (max-width: 1300px){
@@ -1575,5 +1618,47 @@
     }
   }
 
+  
+}
+
+@media screen and (width: 912px){
+  .App{
+    background-color: red;
+  }
+
+  .carousel{
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    overflow-y: hidden;
+    margin: auto;
+    .carousel1-btn{
+      position: absolute;
+      right: 5%;
+      width: 50px;
+    }
+    .prev-btn{
+      position: absolute;
+      left: 5%;
+      width: 50px;
+    }
+    .carousel-wrapper{
+      display: flex;
+      overflow-y: hidden;
+      justify-content: center;
+      
+      .carousel-text{
+        margin: 0;
+      }
+  
+      .carousel-item{
+        padding: 40px;
+        .carousel-image{
+          display: block;
+        }
+      }
+      
+    }
+  }
   
 }
