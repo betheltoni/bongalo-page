@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bongalo-page/static/css/main.b9a39175.css",
-    "main.js": "/bongalo-page/static/js/main.93906e7c.js",
+    "main.css": "/bongalo-page/static/css/main.1b068955.css",
+    "main.js": "/bongalo-page/static/js/main.5fe1c762.js",
     "static/js/787.28cb0dcd.chunk.js": "/bongalo-page/static/js/787.28cb0dcd.chunk.js",
     "static/media/background-header.png": "/bongalo-page/static/media/background-header.9cdbab225bc2f4463efa.png",
     "static/media/yaounde.svg": "/bongalo-page/static/media/yaounde.9a380a558f96f9fa6f85.svg",
@@ -37,6 +37,7 @@
     "static/media/horizontal.svg": "/bongalo-page/static/media/horizontal.cfe66ef81ffd94295b2127cad410db0e.svg",
     "static/media/destination.svg": "/bongalo-page/static/media/destination.bf4e449f9191c5181f0af761f63fc35b.svg",
     "static/media/signuprightarrow.svg": "/bongalo-page/static/media/signuprightarrow.61cd26259ad571e89908eefcfbb747b4.svg",
+    "static/media/prev.svg": "/bongalo-page/static/media/prev.b9573fcbfd12ce9ce81a5accc9860fac.svg",
     "static/media/featuredplacesarrow.svg": "/bongalo-page/static/media/featuredplacesarrow.62b08ef72eb840fa35cbe6b96ef4b7ad.svg",
     "static/media/satisfaction.svg": "/bongalo-page/static/media/satisfaction.053d3461fa92ec4eefff6d0746b63179.svg",
     "static/media/downwardarrow.svg": "/bongalo-page/static/media/downwardarrow.1adf8f75e8b2d9f4926c732e4d5ac9a0.svg",
@@ -51,12 +52,12 @@
     "static/media/Line.svg": "/bongalo-page/static/media/Line.08935a685460a70c82a64b17f4031a3f.svg",
     "static/media/arrival.svg": "/bongalo-page/static/media/arrival.64d016562ef70a123abbaf5da7e2ef1b.svg",
     "static/media/Ellipse-blue.svg": "/bongalo-page/static/media/Ellipse-blue.08f11957f43c2ebe6714bacb4e4d9e83.svg",
-    "main.b9a39175.css.map": "/bongalo-page/static/css/main.b9a39175.css.map",
-    "main.93906e7c.js.map": "/bongalo-page/static/js/main.93906e7c.js.map",
+    "main.1b068955.css.map": "/bongalo-page/static/css/main.1b068955.css.map",
+    "main.5fe1c762.js.map": "/bongalo-page/static/js/main.5fe1c762.js.map",
     "787.28cb0dcd.chunk.js.map": "/bongalo-page/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b9a39175.css",
-    "static/js/main.93906e7c.js"
+    "static/css/main.1b068955.css",
+    "static/js/main.5fe1c762.js"
   ]
 }
